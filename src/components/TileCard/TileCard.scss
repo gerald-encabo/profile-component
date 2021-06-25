@@ -1,0 +1,98 @@
+@import "../Colors";
+@import "../MediaQueries";
+
+.tilecard {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 500px);
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    margin: 50px auto;
+
+    @include small-devices {
+        justify-content: left;
+    }
+
+    &-container {
+        width: 500px;
+        height: 100%;
+        background-color: $light;
+        box-shadow: 0px 2px 5px 0px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+
+        @include small-devices {
+            width: 355px;
+            min-height: 550px;
+        }
+    }
+    &-container-top {
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+        opacity: 0.8;
+    }
+    &-container-bottom {
+        width: 100%;
+        height: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        background-color: $light;
+        color: $dark;
+
+        @include small-devices {
+            padding-top: 14%;
+            height: 100%;
+        }
+    }
+
+    &-banner-image {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        transform: scale(2.3);
+        overflow: hidden;
+    }
+    &-logo{
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        background-color: $light;
+        border-radius: 8px;
+        padding: 2px;
+        top: 41%;
+        left: 10%;
+        box-shadow: 0px 1px 4px 0px $shadow;
+    }
+    Button {
+        position: absolute;
+        right: 10%;
+        top: 52%;
+        cursor: pointer;
+    }
+    &-title {
+        font-size: 28px;
+        font-weight: 500;
+        padding-top: 10px;
+    }
+    &-headline {
+        padding-top: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    &-desc {
+        padding-top: 10px;
+        font-size: 14px;
+    }
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+}

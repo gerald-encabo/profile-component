@@ -1,0 +1,17 @@
+@import "../Colors.scss";
+
+button {
+    padding: 10px auto;
+    width: 90px;
+    height: 26px;
+    background-color: transparent;
+    color: $primary;
+    border-radius: 8px;
+    border: 2px solid $primary;
+    font-size: 14px;
+    font-weight: 540;
+}
+button:hover {
+    background-color: $primary;
+    color: $light;
+}
