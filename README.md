@@ -20,3 +20,7 @@ Ipad View with multiple component used:
 
 Mobile View with multiple component used:
 ![Bounteous - Mobile View](https://user-images.githubusercontent.com/15988182/123355187-23774700-d533-11eb-8752-81713d8b67a3.png)
+
+Lighthouse Performance Test:
+![LigthousePeformance](https://user-images.githubusercontent.com/15988182/123363274-20368800-d540-11eb-8643-3bc5cd12904c.PNG)
+
